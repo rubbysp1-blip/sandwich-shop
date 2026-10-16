@@ -6,15 +6,15 @@ public class pointOfSale {
         //Create copy of scanner
         Scanner input = new Scanner(System.in);
 
-        double totalPrice, discount;
+        double totalPrice;
 
         //Ask the user if they want regular or large sandwich
-        System.out.println("1: Regular: base price $5.45\n" +
+        System.out.print("1: Regular: base price $5.45\n" +
                 "2: Large: base price $8.95: ");
         int foodOrder = input.nextInt();
 
         //Ask the user their age
-        System.out.println("What is your age:");
+        System.out.print("What is your age:");
         int userAge = input.nextInt();
 
         //If user is under the age 17 add a discount of 10%
