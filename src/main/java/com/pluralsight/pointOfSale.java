@@ -51,7 +51,7 @@ public class pointOfSale {
                 }
             }else{
                 if(loadSandwich == 'y'){
-                    totalPrice = (8.75 * .80) + 1.25;
+                    totalPrice = (8.75 * .80) + 1.75;
                 }else {
                     totalPrice = 8.95 * .80;
                 }
@@ -60,6 +60,7 @@ public class pointOfSale {
         //Else they do not get discount
         }else{
             if (foodOrder == 1){
+                //if they said yea 'y' then add $1
                 if(loadSandwich == 'y'){
                     totalPrice = 5.45 + 1;
                 }else {
@@ -68,7 +69,7 @@ public class pointOfSale {
 
             }else{
                 if(loadSandwich == 'y'){
-                    totalPrice = 8.95 + 1;
+                    totalPrice = 8.95 + 1.75;
                 }else {
                     totalPrice = 8.95;
                 }
