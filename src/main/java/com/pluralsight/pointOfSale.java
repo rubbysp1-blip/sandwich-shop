@@ -17,6 +17,7 @@ public class pointOfSale {
         System.out.println("What is your age:");
         int userAge = input.nextInt();
 
+        //If user is under the age 17 add a discount of 10%
         if (userAge < 17){
             if (foodOrder == 1){
                 totalPrice = 5.45 - (5.45 * .10);
@@ -25,7 +26,7 @@ public class pointOfSale {
                 totalPrice = 8.95 - (8.95 * .10);
                 System.out.println("Sandwich Total: " + totalPrice);
             }
-
+        //else user is older than 65 add 20%
         } else if (userAge > 65) {
             if (foodOrder == 1){
                 totalPrice = 5.45 - (5.45 * .20);
@@ -34,7 +35,7 @@ public class pointOfSale {
                 totalPrice = 8.85 - (8.95 * .20);
                 System.out.println("Sandwich Total: " + totalPrice);
             }
-
+        //Else they do not get discount
         }else{
             if (foodOrder == 1){
                 totalPrice = 5.45;
@@ -43,7 +44,6 @@ public class pointOfSale {
                 totalPrice = 8.95;
                 System.out.println("Sandwich Total: " + totalPrice);
             }
-
 
         }
 
