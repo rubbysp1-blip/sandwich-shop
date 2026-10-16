@@ -10,5 +10,11 @@ public class pointOfSale {
         System.out.println("1: Regular: base price $5.45\n" +
                 "2: Large: base price $8.95: ");
         int foodOrder = input.nextInt();
+
+        //Ask the user their age
+        System.out.println("What is your age:");
+        String userAge = input.nextLine();
+
+
     }
 }
