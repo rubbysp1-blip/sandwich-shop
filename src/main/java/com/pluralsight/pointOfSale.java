@@ -27,13 +27,15 @@ public class pointOfSale {
 
         //If user is under the age 17 add a discount of 10%
         if (userAge < 17){
+            //If user entered 1 place price accordingly
             if (foodOrder == 1){
+                //And if they put y for yes add $1
                 if(loadSandwich == 'y'){
                     totalPrice = (5.45 * .90) + 1;
                 }else {
                     totalPrice = 5.45 * .90;
                 }
-            }else{
+            }else{ //If they chose number 2 set to 8.95 with 10% or 8.95 + 1.75 plus 10%
                 if (loadSandwich == 'y'){
                     totalPrice = (8.95 * .90) + 1.75;
                 }else {
@@ -59,6 +61,7 @@ public class pointOfSale {
             }
         //Else they do not get discount
         }else{
+            //Give regular price if they do not meet conditions
             if (foodOrder == 1){
                 //if they said yea 'y' then add $1
                 if(loadSandwich == 'y'){
@@ -67,7 +70,7 @@ public class pointOfSale {
                     totalPrice = 5.45;
                 }
 
-            }else{
+            }else{ //Section for when the user entered the number 2 and did not meet conditions
                 if(loadSandwich == 'y'){
                     totalPrice = 8.95 + 1.75;
                 }else {
@@ -75,7 +78,7 @@ public class pointOfSale {
                 }
             }
         }
-
+        //Print out the total price the user has to pay
         System.out.print("Sandwich Total: " + totalPrice);
 
     }
