@@ -31,15 +31,15 @@ public class pointOfSale {
             if (foodOrder == 1){
                 //And if they put y for yes add $1
                 if(loadSandwich == 'y'){
-                    totalPrice = (5.45 * .90) + 1;
+                    totalPrice = (5.45 * (1 - .10)) + 1;
                 }else {
-                    totalPrice = 5.45 * .90;
+                    totalPrice = 5.45 * (1 - .10);
                 }
             }else{ //If they chose number 2 set to 8.95 with 10% or 8.95 + 1.75 plus 10%
                 if (loadSandwich == 'y'){
-                    totalPrice = (8.95 * .90) + 1.75;
+                    totalPrice = (8.95 * (1 - .10)) + 1.75;
                 }else {
-                    totalPrice = 8.95 * .90;
+                    totalPrice = 8.95 * (1 - .10);
                 }
 
             }
@@ -47,15 +47,15 @@ public class pointOfSale {
         } else if (userAge > 65) {
             if (foodOrder == 1){
                 if(loadSandwich == 'y'){
-                    totalPrice = (5.45 * .80) + 1;
+                    totalPrice = (5.45 * (1 - .20)) + 1;
                 }else {
-                    totalPrice = 5.45 * .80;
+                    totalPrice = 5.45 * (1 - .20);
                 }
             }else{
                 if(loadSandwich == 'y'){
-                    totalPrice = (8.75 * .80) + 1.75;
+                    totalPrice = (8.75 * (1 - .20)) + 1.75;
                 }else {
-                    totalPrice = 8.95 * .80;
+                    totalPrice = 8.95 * (1 - .20);
                 }
 
             }
