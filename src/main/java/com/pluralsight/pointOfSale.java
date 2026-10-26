@@ -26,7 +26,7 @@ public class pointOfSale {
         int userAge = input.nextInt();
 
         //If user is under the age 17 add a discount of 10%
-        if (userAge < 17){
+        if (userAge <= 17){
             //If user entered 1 place price accordingly
             if (foodOrder == 1){
                 //And if they put y for yes add $1
@@ -44,7 +44,7 @@ public class pointOfSale {
 
             }
         //else user is older than 65 add 20%
-        } else if (userAge > 65) {
+        } else if (userAge >= 65) {
             if (foodOrder == 1){
                 if(loadSandwich == 'y'){
                     totalPrice = (5.45 * (1 - .20)) + 1;
