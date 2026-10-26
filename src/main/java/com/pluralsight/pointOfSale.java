@@ -53,11 +53,10 @@ public class pointOfSale {
                 }
             }else{
                 if(loadSandwich == 'y'){
-                    totalPrice = (8.75 * (1 - .20)) + 1.75;
+                    totalPrice = (8.95 * (1 - .20)) + 1.75;
                 }else {
                     totalPrice = 8.95 * (1 - .20);
                 }
-
             }
         //Else they do not get discount
         }else{
